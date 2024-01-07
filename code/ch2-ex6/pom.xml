@@ -5,9 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>my.home</groupId>
-    <artifactId>ch2-ex3</artifactId>
+    <artifactId>ch2-ex6</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -15,7 +14,6 @@
             <version>5.3.29</version>
         </dependency>
     </dependencies>
-
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
