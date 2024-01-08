@@ -73,7 +73,7 @@ ___// code: ch3-ex1___
 
     - монтаж бинов путем передачи параметра в метод с аннотацией @Bean
 
-    ```java
+```java
     @Bean
     public Parrot parrot() {
         Parrot p = new Parrot();
@@ -89,3 +89,33 @@ ___// code: ch3-ex1___
         return p;
     }
 ```
+
+
+##### 3.2. Внедрение бинов с помощью аннотациии @Autowired  
+___// code: ch3-ex2___
+
+>***Способы:***
+>1. Внедрение значения класса в поле другого класа:
+```java
+    @Autowired
+    private Parrot parrot;
+```
+
+>2. Внедрение значения через конструктор
+```java
+public class Person {
+    private final Parrot parrot;
+    @Autowired
+    public Person(Parrot parrot) {
+        this.parrot = parrot;
+    }
+}
+```
+>3. Внедрение зависимости через сеттер.
+```java
+   @Autowired
+   public void setParrot(Parrot parrot) {
+       this.parrot = parrot;
+   }
+```
+
